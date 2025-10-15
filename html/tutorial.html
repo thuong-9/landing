@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCode</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/tutorial.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="../img/logo.png" alt="EasyCode" height="32">
+                EasyCode
+            </a>
+            <nav class="main-nav">
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a class="active" href="tutorial.html">Tutorial</a></li>
+                     <li class="dropdown">
+                         <a href="lesson.html">Lesson</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html-lesson.html">HTML</a></li>
+                            <li><a href="css-lesson.html">CSS</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="exercises.html">Exercises</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="login.html">Login</a>
+                <a class="btn btn-primary" href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>HTML & CSS Tutorial</h1>
+        <section>
+            <h2>1) HTML là gì?</h2>
+            <p>HTML (HyperText Markup Language) là ngôn ngữ đánh dấu để xây dựng cấu trúc trang web.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="vi"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Ví dụ HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Tiêu đề&lt;/h1&gt;
+    &lt;p&gt;Đoạn văn bản.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+
+        <section>
+            <h2>2) CSS là gì?</h2>
+            <p>CSS (Cascading Style Sheets) dùng để trình bày: màu sắc, font, bố cục.</p>
+<pre><code>h1 {
+  color: #1f6feb;
+}
+p {
+  line-height: 1.6;
+}
+</code></pre>
+        </section>
+
+        <section>
+            <h2>3) Flexbox nhanh</h2>
+<pre><code>.row {
+  display: flex;
+  gap: 16px;
+}
+.col {
+  flex: 1;
+}
+</code></pre>
+        </section>
+
+        <section>
+            <h2>4) Grid nhanh</h2>
+<pre><code>.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+</code></pre>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 EasyCode</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="exercises.html">Exercises</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+

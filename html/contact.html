@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCode</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="../img/logo.png" alt="EasyCode" height="32">
+                EasyCode
+            </a>
+            <nav class="main-nav">
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="tutorial.html">Tutorial</a></li>
+                     <li class="dropdown">
+                         <a href="lesson.html">Lesson</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html-lesson.html">HTML</a></li>
+                            <li><a href="css-lesson.html">CSS</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="exercises.html">Exercises</a></li>
+                     <li><a class="active" href="contact.html">Contact Us</a></li>
+                 </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="login.html">Login</a>
+                <a class="btn btn-primary" href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Liên hệ</h1>
+        <p>Gửi câu hỏi của bạn, chúng tôi sẽ phản hồi trong 24h.</p>
+        <form class="contact-form" action="#" method="post">
+            <div class="field">
+                <label for="name">Họ và tên</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div class="field">
+                <label for="message">Nội dung</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Gửi</button>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 EasyCode</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="tutorial.html">Tutorial</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="exercises.html">Exercises</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
+

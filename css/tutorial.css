@@ -1,0 +1,11 @@
+@import url('common.css');
+
+/* Page-specific styles for tutorial.html */
+h1 { margin: 16px 0 8px; }
+section { 
+  background: #d0e3fe; 
+  border: 1px solid var(--border); 
+  border-radius: 12px; 
+  padding: 16px; 
+  margin: 16px 0; 
+}

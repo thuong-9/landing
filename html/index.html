@@ -1,48 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website giáo dục</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>EasyCode</title>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Educational Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">
+                <img src="../img/logo.png" alt="EasyCode" height="32">
+                EasyCode
+            </a>
+            <nav class="main-nav">
+                 <ul>
+                     <li><a class="active" href="index.html">Home</a></li>
+                     <li><a href="tutorial.html">Tutorial</a></li>
+                     <li class="dropdown">
+                         <a href="lesson.html">Lesson</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="html-lesson.html">HTML</a></li>
+                            <li><a href="css-lesson.html">CSS</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="exercises.html">Exercises</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="login.html">Login</a>
+                <a class="btn btn-primary" href="signup.html">Sign Up</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to our educational platform where you can find a variety of courses to enhance your skills.</p>
+        <section class="hero">
+            <div class="container">
+                <h1>Học HTML & CSS dễ hiểu, có lộ trình rõ ràng</h1>
+                <p>Xây dựng nền tảng Frontend vững chắc qua ví dụ thực tế, bài tập tương tác và dự án nhỏ.</p>
+                <div class="cta-group">
+                    <a class="btn btn-primary" href="tutorial.html">Bắt đầu học</a>
+                    <a class="btn" href="exercises.html">Luyện tập ngay</a>
+                </div>
+            </div>
         </section>
-        <section id="courses">
-            <h2>Courses</h2>
-            <ul>
-                <li>Mathematics</li>
-                <li>Science</li>
-                <li>History</li>
-                <li>Language Arts</li>
-            </ul>
+
+        <section class="features container">
+            <h2>Vì sao chọn LT Web?</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Lý thuyết ngắn gọn</h3>
+                    <p>Tập trung vào bản chất HTML & CSS, tránh lan man, nhiều hình minh họa.</p>
+                </article>
+                <article class="card">
+                    <h3>Ví dụ trực quan</h3>
+                    <p>Đoạn mã mẫu rõ ràng, ứng dụng ngay vào bố cục, màu sắc, typography.</p>
+                </article>
+                <article class="card">
+                    <h3>Bài tập có lời giải</h3>
+                    <p>Tăng dần độ khó, có gợi ý và đáp án để tự đối chiếu.</p>
+                </article>
+            </div>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are dedicated to providing quality education to learners around the world.</p>
+
+        <section class="curriculum container">
+            <h2>Lộ trình học</h2>
+            <ol class="steps">
+                <li>HTML cơ bản: thẻ, thuộc tính, cấu trúc tài liệu</li>
+                <li>CSS cơ bản: bộ chọn, màu sắc, hộp (box model)</li>
+                <li>Bố cục hiện đại: Flexbox, Grid</li>
+                <li>Responsive: Mobile-first, breakpoint</li>
+            </ol>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you have any questions, feel free to reach out to us at</p>
-            <p>Email:</p>
     </main>
-    <footer>
-        <p>&copy; 2025 Website giáo dục. All rights reserved.</p>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 EasyCode. Học HTML & CSS cho người mới bắt đầu.</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="tutorial.html">Tutorial</a>
+                <a href="lesson.html">Lesson</a>
+                <a href="exercises.html">Exercises</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
