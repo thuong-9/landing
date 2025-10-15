@@ -1,12 +1,2 @@
 @import url('common.css');
 
-/* Page-specific styles for login.html */
-.auth { max-width: 560px; }
-.auth-form { 
-  background: #e1efff; 
-  border: 1px solid var(--border); 
-  border-radius: 12px; 
-  padding: 16px; 
-  margin: 16px 0; 
-}
-.switch { color: var(--muted); }
