@@ -1,0 +1,52 @@
+@import url('common.css');
+
+/* Page-specific styles for index.html */
+.hero .container {
+    justify-items: center;
+    align-items: center;
+}
+.hero { 
+  padding: 64px 0; 
+  background: radial-gradient(80% 120% at 50% -20%, #1f6feb22, transparent 60%); 
+  border-bottom: 1px solid var(--border); 
+}
+.hero h1 { 
+  margin: 0 0 8px; 
+  font-size: 36px; 
+}
+.hero p { 
+  margin: 0 0 20px; 
+  color: var(--muted); 
+  max-width: 720px; 
+}
+.cta-group { 
+  display: flex; 
+  gap: 12px; 
+}
+
+.features { padding: 40px 0; }
+.features .grid { 
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px; 
+}
+.card { 
+  background: #d0e3fe; 
+  border: 1px solid var(--border); 
+  border-radius: 12px; 
+  padding: 16px; 
+}
+
+.curriculum { padding: 16px 0 48px; }
+.steps { 
+  background: #d0e3fe; 
+  border: 1px solid var(--border); 
+  border-radius: 12px; 
+  padding: 16px 24px; 
+}
+.steps li { margin: 8px 0; }
+
+@media (max-width: 800px) {
+  .features .grid { grid-template-columns: 1fr; }
+  .cta-group { flex-wrap: wrap; }
+}

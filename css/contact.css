@@ -1,0 +1,11 @@
+@import url('common.css');
+
+/* Page-specific styles for contact.html */
+.contact-form { 
+  background: #e1efff; 
+  border: 1px solid var(--border); 
+  border-radius: 12px; 
+  padding: 16px; 
+  margin: 16px 0; 
+  max-width: 720px; 
+}
