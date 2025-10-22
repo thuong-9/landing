@@ -1,11 +1,142 @@
 @import url('common.css');
 
-/* Page-specific styles for contact.html */
-.contact-form { 
-  background: #e1efff; 
-  border: 1px solid var(--border); 
-  border-radius: 12px; 
-  padding: 16px; 
-  margin: 16px 0; 
-  max-width: 720px; 
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+
+/* ===== PHẦN TIÊU ĐỀ NGOÀI FORM ===== */
+.contact-section {
+  text-align: center;
+  margin-top: 20px; /* tránh header đè */
+}
+
+.contact-section h1 {
+  color: #298cf0;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-section h1 i {
+  margin-right: 8px;
+}
+
+.contact-section p {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* ===== KHUNG FORM ===== */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 60px; /* chừa khoảng cuối cho footer */
+}
+/* ===== FORM LIÊN HỆ ===== */
+.contact-form {
+  background: #e1efff;
+  border: 1px solid var(--border, #307fff);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  font-size: 20px;
+}
+/* ===== CÁC TRƯỜNG NHẬP ===== */
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0066cc;
+}
+
+/* Ô nhập có icon bên trong */
+.input-icon {
+  position: relative;
+}
+
+.input-icon i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #68adf7;
+  font-size: 20px;
+}
+
+.input-icon input,
+.input-icon textarea {
+  width: 100%;
+  padding: 12px 14px 12px 38px; /* chừa chỗ cho icon */
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.input-icon textarea {
+  padding-top: 14px;
+  resize: vertical;
+  height: 100px;
+}
+
+.input-icon input:focus,
+.input-icon textarea:focus {
+  border-color: #0066cc;
+  background-color: #f7fbff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0,102,204,0.25);
+}
+
+/* ===== NÚT GỬI ===== */
+.btn-send {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #62adf8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 22px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-send i {
+  font-size: 16px;
+}
+.input-icon.textarea-icon i {
+  top: 18px;
+  transform: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 24px;
+  }
+
+  .contact-section h1 {
+    font-size: 24px;
+  }
 }
