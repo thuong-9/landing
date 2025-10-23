@@ -1,4 +1,7 @@
+
 @import url('common.css');
+
+
 
 /* ===== BODY ===== */
 body {
@@ -7,7 +10,17 @@ body {
   background-color: #ffffff;
 }
 
-
+/* === Ảnh ===*/
+.anh-section{
+  
+  width: 100%;
+}
+.anh-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
 /* ===== PHẦN TIÊU ĐỀ NGOÀI FORM ===== */
 .contact-section {
   text-align: center;
@@ -140,3 +153,4 @@ body {
     font-size: 24px;
   }
 }
+
