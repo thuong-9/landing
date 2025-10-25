@@ -10,44 +10,99 @@
 <body>
     <div data-include="partials/header.html"></div>
     <main>
+       <section class="video">
+            <video autoplay muted loop playsinline>
+                <source src="../img/vd.mp4" type="video/mp4">
+            </video>
+
+            <div class="cta-group">
+                <a class="btn btn-primary" href="tutorial.html">Bắt đầu học</a>
+                <a class="btn btn-outline" href="exercises.html">Luyện tập ngay</a>
+            </div>
+        </section>
+
         <section class="hero">
             <div class="container">
                 <h1>Học HTML & CSS dễ hiểu, có lộ trình rõ ràng</h1>
                 <p>Xây dựng nền tảng Frontend vững chắc qua ví dụ thực tế, bài tập tương tác và dự án nhỏ.</p>
-                <div class="cta-group">
-                    <a class="btn btn-primary" href="tutorial.html">Bắt đầu học</a>
-                    <a class="btn" href="exercises.html">Luyện tập ngay</a>
-                </div>
             </div>
         </section>
 
         <section class="features container">
-            <h2>Vì sao chọn LT Web?</h2>
+            <h2>Vì sao chọn lập trình Web?</h2>
             <div class="grid">
                 <article class="card">
-                    <h3>Lý thuyết ngắn gọn</h3>
-                    <p>Tập trung vào bản chất HTML & CSS, tránh lan man, nhiều hình minh họa.</p>
+                <div class="icon">📘</div>
+                <h3>Lý thuyết ngắn gọn</h3>
+                <p>Tập trung vào bản chất của HTML & CSS với cách trình bày súc tích, dễ hiểu và nhiều hình minh họa trực quan giúp ghi nhớ nhanh hơn.</p>
                 </article>
+
                 <article class="card">
-                    <h3>Ví dụ trực quan</h3>
-                    <p>Đoạn mã mẫu rõ ràng, ứng dụng ngay vào bố cục, màu sắc, typography.</p>
+                <div class="icon">💡</div>
+                <h3>Ví dụ trực quan</h3>
+                <p>Ví dụ thực tế, ứng dụng ngay vào bố cục web, phối màu, typography, và responsive layout giúp bạn nắm chắc kỹ năng qua thực hành.</p>
                 </article>
+
                 <article class="card">
-                    <h3>Bài tập có lời giải</h3>
-                    <p>Tăng dần độ khó, có gợi ý và đáp án để tự đối chiếu.</p>
+                <div class="icon">🧩</div>
+                <h3>Bài tập có lời giải</h3>
+                <p>Hệ thống bài tập từ cơ bản đến nâng cao, có hướng dẫn, gợi ý và đáp án để tự học và kiểm tra tiến độ hiệu quả.</p>
                 </article>
             </div>
         </section>
 
         <section class="curriculum container">
-            <h2>Lộ trình học</h2>
-            <ol class="steps">
-                <li>HTML cơ bản: thẻ, thuộc tính, cấu trúc tài liệu</li>
-                <li>CSS cơ bản: bộ chọn, màu sắc, hộp (box model)</li>
-                <li>Bố cục hiện đại: Flexbox, Grid</li>
-                <li>Responsive: Mobile-first, breakpoint</li>
-            </ol>
+            <h2>Lộ trình học HTML & CSS</h2>
+            <div class="timeline">
+            <div class="step">
+                <div class="icon">🏁</div>
+                <div class="content">
+                    <h3>Giai đoạn 1: Làm quen với HTML</h3>
+                    <p>Nắm vững cấu trúc trang web, các thẻ HTML cơ bản, thuộc tính, danh sách, liên kết, hình ảnh và biểu mẫu. Biết cách tổ chức nội dung chuẩn SEO.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="icon">🎨</div>
+                <div class="content">
+                <h3>Giai đoạn 2: Làm chủ CSS cơ bản</h3>
+                <p>Hiểu cách dùng bộ chọn, màu sắc, phông chữ, viền, khoảng cách, và các hiệu ứng đổ bóng để tạo giao diện bắt mắt, nhất quán và dễ bảo trì.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="icon">🧱</div>
+                <div class="content">
+                <h3>Giai đoạn 3: Bố cục hiện đại</h3>
+                <p>Thực hành thiết kế giao diện chuyên nghiệp bằng Flexbox và Grid. Học cách căn chỉnh, chia cột và sắp xếp thành phần hợp lý trong bố cục trang.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="icon">📱</div>
+                <div class="content">
+                <h3>Giai đoạn 4: Responsive & tối ưu</h3>
+                <p>Xây dựng trang web hiển thị tốt trên mọi thiết bị với kỹ thuật Mobile-first, breakpoint và tối ưu hiệu suất tải trang.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="icon">🚀</div>
+                <div class="content">
+                <h3>Giai đoạn 5: Dự án thực tế</h3>
+                <p>Tổng hợp kiến thức qua việc tự xây dựng website landing page hoàn chỉnh, tối ưu giao diện và trải nghiệm người dùng.</p>
+                </div>
+            </div>
+            </div>
         </section>
+        <section class="cta-section">
+            <div class="container">
+                <h3>Đã sẵn sàng bắt đầu hành trình lập trình Frontend của bạn?</h3>
+                <p>Tham gia ngay khóa học <strong>HTML & CSS</strong> để tạo nền tảng vững chắc cho sự nghiệp Web Developer!</p>
+                <a href="login.html" class="btn btn-primary">🚀 Bắt đầu học ngay</a>
+            </div>
+        </section>
+
     </main>
 
     <div data-include="partials/footer.html"></div>
