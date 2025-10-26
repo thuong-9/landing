@@ -8,33 +8,7 @@
     <link rel="stylesheet" href="../css/html-lesson.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="logo" href="index.html">
-                <img src="../img/logo.png" alt="EasyCode" height="32">
-                EasyCode
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a class="active" href="lesson.html">Lesson</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="html-lesson.html">HTML</a></li>
-                            <li><a href="css-lesson.html">CSS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="exercises.html">Exercises</a></li>
-                    <li><a href="tutorial.html">Tutorial</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="auth-links">
-                <a href="login.html">Login</a>
-                <a class="btn btn-primary" href="login.html">Sign Up</a>
-            </div>
-        </div>
-    </header>
+    <div data-include="partials/header.html"></div>
 
     <main class="container-lesson">
         <div class="main_box">
@@ -562,19 +536,6 @@
             </div>
         </div>
     </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© 2025 EasyCode</p>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="lesson.html">Lesson</a>
-                <a href="exercises.html">Exercises</a>
-                <a href="tutorial.html">Tutorial</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
-    </footer>
     <script>
         function showContent(id, element) {
         // Ẩn tất cả phần nội dung
@@ -591,6 +552,7 @@
         element.classList.add('active-link');
         }
     </script>
-
+    <div data-include="partials/footer.html"></div>
+    <script src="/js/include.js"></script>
 </body>
 </html>
