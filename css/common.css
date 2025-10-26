@@ -146,7 +146,7 @@ ul.dropdown-menu {
   cursor: pointer;
 }
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  background: linear-gradient(135deg, #8fdbde, #0571ff);
   color: #fff;
   box-shadow: var(--shadow);
 }
@@ -158,41 +158,7 @@ ul.dropdown-menu {
   opacity: 0.9;
 }
 
-/* ======== HERO ======== */
-.hero {
-  background: linear-gradient(135deg, #e0f0ff, #fff);
-  text-align: center;
-  padding: 100px 20px;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: var(--primary-dark);
-}
-.hero p {
-  color: var(--muted);
-  max-width: 700px;
-  margin: 0 auto 24px;
-}
 
-/* ======== FEATURES / CARD ======== */
-.features .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-.card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 24px;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
-}
 
 /* ======== FORMS ======== */
 .auth-form, .contact-form {
@@ -200,7 +166,7 @@ ul.dropdown-menu {
   padding: 30px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  max-width: 480px;
+  max-width: 560px;
   margin: 30px auto;
 }
 .field {
@@ -229,7 +195,7 @@ input:focus, textarea:focus {
   background: var(--panel);
   border-top: 1px solid var(--border);
   padding: 30px 0;
-  margin-top: 40px;
+  margin-top: autos;
 }
 .footer-inner {
   display: flex;
@@ -246,20 +212,4 @@ input:focus, textarea:focus {
 }
 .site-footer nav a:hover {
   color: var(--primary);
-}
-
-/* ======== RESPONSIVE ======== */
-@media (max-width: 768px) {
-  .header-inner {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  .main-nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .hero h1 {
-    font-size: 1.9rem;
-  }
 }
