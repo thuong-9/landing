@@ -1,0 +1,214 @@
+@import url('common.css');
+/* Toàn màn hình */
+ul.list{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.css-lesson {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.css-lesson .menu{
+  width: 280px;
+  flex-shrink: 0;
+  padding: 0;
+  background: rgba(255,255,255,0.1);
+}
+
+.menu .logo{
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #007bff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.menu .list{
+    list-style: none;
+    margin: 3px 0;
+    padding: 0;
+}
+
+.menu .list li{
+    margin-top: 3px;
+    padding: 0;
+}
+
+.menu .list li:hover{
+    border-left: 1px solid #ffffff;
+    box-shadow: 0 0 4px rgba(167, 167, 167, 0.5);
+}
+.menu .list a{
+    display: block;
+    color: #4494df;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+/* KHU VỰC NỘI DUNG */
+.NoiDung {
+  flex-grow: 1;
+  padding: 20px 40px;
+  border-left: 1px solid #efefef;
+}
+
+.main-title {
+    color: white;
+    font-size: 1.7em;
+    background-color: #0097e6;
+    text-align: center;
+    padding: 5px   
+}
+.main-title i{
+  font-size: 1.5em;
+  background-color: #0097e6;
+}
+
+.title2 {
+    font-weight: 50px;
+    font-size: 1.8em;
+    margin-top: 1em;
+    margin-bottom: 1px;
+    color:#0097e6
+}
+
+.vien {
+  border: 2px solid #0632d3;          /* Khung viền bao quanh */
+  border-radius: 10px;             /* Bo góc mềm mại */
+  padding: 10px;                   /* Khoảng cách trong khung */
+  background-color: #f9f9f9;       /* Màu nền nhẹ */
+  line-height: 1.6;                /* Giãn dòng dễ đọc */
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.vien p {
+  text-indent: 1em;                /* Thụt đầu dòng khoảng 1 tab */
+  margin-bottom: 10px;             /* Cách nhau giữa các đoạn */
+  text-align: justify;             /* Canh đều hai bên cho đẹp */
+}
+.vien b {
+  color: #0077cc;                  /* Tô màu nổi bật cho chữ in đậm */
+}
+.vien ul {
+    padding-left: 40px; /* thụt vào 2 tab */
+    margin-top: 5px;
+}
+.vien li {
+    margin: 6px 0;
+}
+
+.vidu {
+  color:#4494df;
+  font-size: 1.5em;
+}
+
+.color-box {
+  display: inline-block;
+  width: 25px;          /* chiều rộng ô màu */
+  height: 25px;         /* chiều cao ô màu */
+  border: 1px solid #ccc;  /* viền nhẹ để thấy rõ màu trắng */
+  margin-left: 10px;    /* cách chữ một chút */
+  vertical-align: middle; /* canh giữa dòng */
+  border-radius: 4px;   /* bo góc nhẹ cho đẹp */
+}
+
+ .color-box1 {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+  }
+
+.content {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.content.active {
+  display: block;
+}
+
+.css-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+}
+
+.css-table th,
+.css-table td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.css-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.css-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.css-table em {
+    font-style: italic;
+    color: #0056b3;
+}
+
+/*
+h2 {
+  color: #2170a1;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+*/
+p, li {
+  line-height: 1.6;
+  color: #333;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 12px;
+  border-left: 4px solid #3498db;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+code {
+  font-family: Consolas, monospace;
+  font-size: 15px;
+  color: #222;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 25px 0;
+}
+
+
+
+
+
+
