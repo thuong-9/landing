@@ -36,9 +36,92 @@
         </div>
     </header>
 
-    <main class="container">
-        <!-- nội dung trang bài tập -->
-    </main>
+    <div class="main_box">
+            <div class="sidebar_menu">
+            <div class="logo">Bài tập HTML</div>
+            <ul class="list">
+                <li><a href="#" onclick="showContent('cautruc', this)" class="active-link">Cấu trúc HTML</a></li>
+                <li><a href="#" onclick="showContent('soanthao', this)">Soạn thảo</a></li>
+                <li><a href="#" onclick="showContent('thecoBan', this)">Các thẻ cơ bản</a></li>
+                <li><a href="#" onclick="showContent('thuocTinh', this)">Thuộc tính</a></li>
+                <li><a href="#" onclick="showContent('lienKet', this)">Liên kết</a></li>
+                <li><a href="#" onclick="showContent('hinhAnh', this)">Hình ảnh</a></li>
+                <li><a href="#" onclick="showContent('bangBieu', this)">Bảng biểu</a></li>
+                <li><a href="#" onclick="showContent('danhSach', this)">Danh sách</a></li>
+                <li><a href="#" onclick="showContent('chuThich', this)">Chú thích, Trích dẫn</a></li>
+            </ul>
+            </div>
+
+            <div class="main-content">
+                <!-- CẤU TRÚC -->
+                <div id="cautruc" class="content active">
+                
+                <h1 class="main-title">Giới thiệu về HTML</h1>
+                <h2 class="title2">HTML là gì?</h2>
+                
+            </div>
+                <!-- SOẠN THẢO -->
+            <div id="soanthao" class="content">
+                <h1 class="main-title">Giới thiệu về HTML</h1>
+                <h2 class="title2">HTML là gì?</h2>
+                </div>
+
+
+
+<!-- Các thẻ cơ bản -->
+            <div id="thecoBan" class="content">
+                <h1 class="main-title">Soạn thảo mã HTML</h1>
+                <h2 class="title2">Các công cụ viết mã HTML</h2>
+                <p>Bạn có thể soạn thảo HTML bằng các chương trình chuyên dụng như:</p>
+                <div class="khung">
+                    <ul>
+                    <li>Windows: Notepad, VS Code, Sublime Text</li></ul>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Thêm các mục còn lại -->
+    <!-- Thuộc tính -->
+    <div id="thuocTinh" class="content">
+  <h1 class="main-title">Thuộc tính trong HTML</h1>
+  <p>Giải thích về thuộc tính (attribute) trong thẻ HTML.</p>
+  <h2 class="title2">Các công cụ viết mã HTML</h2>
+                <p>Bạn có thể soạn thảo HTML bằng các chương trình chuyên dụng như:</p>
+            
+    </div>
+
+    <!-- Liên kết -->
+    <div id="lienKet" class="content">
+  <h1 class="main-title">Liên kết (Link)</h1>
+  <p>Giới thiệu thẻ &lt;a&gt; và cách tạo liên kết trong HTML.</p>
+
+    </div>
+
+    <!-- Hình ảnh -->
+    <div id="hinhAnh" class="content">
+    <h1 class="main-title">Hình ảnh</h1>
+    <p>Cách chèn hình ảnh sử dụng thẻ <img>.</p>
+    </div>
+
+    <!-- Bảng biểu -->
+    <div id="bangBieu" class="content">
+    <h1 class="main-title">Bảng biểu</h1>
+    <p>Giới thiệu thẻ <table>, <tr>, <td>...</p>
+    </div>
+
+    <!-- Danh sách -->
+    <div id="danhSach" class="content">
+    <h1 class="main-title">Danh sách</h1>
+    <p>Cách dùng thẻ &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; để tạo danh sách.</p>
+    </div>
+
+    <!-- Chú thích & Trích dẫn -->
+    <div id="chuThich" class="content">
+    <h1 class="main-title">Chú thích &amp; Trích dẫn</h1>
+    <p>Giới thiệu thẻ &lt;blockquote&gt;, &lt;q&gt;, &lt;cite&gt;...</p>
+    </div>
+</div>
+    
 
     <footer class="site-footer">
         <div class="container footer-inner">
@@ -52,6 +135,22 @@
             </nav>
         </div>
     </footer>
+    <script>
+        function showContent(id, element) {
+        // Ẩn tất cả phần nội dung
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(c => c.classList.remove('active'));
+
+        // Hiện phần được chọn
+        const selected = document.getElementById(id);
+        if (selected) selected.classList.add('active');
+
+        // Đổi màu tab menu
+        const menuItems = document.querySelectorAll('.sidebar_menu a');
+        menuItems.forEach(item => item.classList.remove('active-link'));
+        element.classList.add('active-link');
+        }
+    </script>
 </body>
 </html>
 
