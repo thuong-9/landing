@@ -30,6 +30,7 @@ body {
 }
 main {
   flex: 1;
+  margin-top: 71px;
 }
 /* ======== LAYOUT ======== */
 .container {
@@ -41,8 +42,9 @@ main {
 
 /* ======== HEADER ======== */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
@@ -196,7 +198,7 @@ input:focus, textarea:focus {
   background: var(--panel);
   border-top: 1px solid var(--border);
   padding: 30px 0;
-  margin-top: autos;
+  margin-top: auto;
 }
 .footer-inner {
   display: flex;

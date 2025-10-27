@@ -9,33 +9,30 @@
 </head>
 <body>
     <div data-include="partials/header.html"></div>
-
-    <main class="container-lesson">
+    <main class="container lesson">
         <div class="main_box">
             <div class="sidebar_menu">
             <div class="logo">HTML cơ bản</div>
-            <ul class="list">
-                <li><a href="#" onclick="showContent('gioithieu', this)" class="active-link">Giới thiệu HTML</a></li>
-                <li><a href="#" onclick="showContent('cautruc', this)">Cấu trúc HTML</a></li>
-                <li><a href="#" onclick="showContent('soanthao', this)">Soạn thảo</a></li>
-                <li><a href="#" onclick="showContent('cacthe', this)">Các thẻ cơ bản</a></li>
-                <li><a href="#" onclick="showContent('thuoctinh', this)">Thuộc tính</a></li>
-                <li><a href="#" onclick="showContent('lienket', this)">Liên kết</a></li>
-                <li><a href="#" onclick="showContent('hinhanh', this)">Hình ảnh</a></li>
-                <li><a href="#" onclick="showContent('bangbieu', this)">Bảng biểu</a></li>
-                <li><a href="#" onclick="showContent('danhsach', this)">Danh sách</a></li>
-                <li><a href="#" onclick="showContent('chuthich', this)">Chú thích & trích dẫn</a></li>
-            </ul>
+                <ul class="list">
+                    <li><a href="#" onclick="showContent('gioithieu', this)" class="active-link">Giới thiệu HTML</a></li>
+                    <li><a href="#" onclick="showContent('cautruc', this)">Cấu trúc HTML</a></li>
+                    <li><a href="#" onclick="showContent('soanthao', this)">Soạn thảo</a></li>
+                    <li><a href="#" onclick="showContent('cacthe', this)">Các thẻ cơ bản</a></li>
+                    <li><a href="#" onclick="showContent('thuoctinh', this)">Thuộc tính</a></li>
+                    <li><a href="#" onclick="showContent('lienket', this)">Liên kết</a></li>
+                    <li><a href="#" onclick="showContent('hinhanh', this)">Hình ảnh</a></li>
+                    <li><a href="#" onclick="showContent('bangbieu', this)">Bảng biểu</a></li>
+                    <li><a href="#" onclick="showContent('danhsach', this)">Danh sách</a></li>
+                    <li><a href="#" onclick="showContent('chuthich', this)">Chú thích & trích dẫn</a></li>
+                </ul>
             </div>
 
             <div class="main-content">
             <!-- GIỚI THIỆU -->
-            <div id="gioithieu" class="content active">
-                
+            <div id="gioithieu" class="content active">                
                 <h1 class="main-title">Giới thiệu về HTML</h1>
                 <h2 class="title2">HTML là gì?</h2>
-                <p>HTML là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của trang web.</p>
-                
+                <p>HTML là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của trang web.</p>              
                 <div class="khung">
                     <ul>
                     <li><b>HTML</b> viết tắt của <b>HyperText Markup Language</b>.</li>
@@ -162,15 +159,12 @@
     &lt;p&gt;Đây là đoạn văn của tôi.&lt;/p&gt;
 &lt; /body&gt;
 &lt; /html&gt;
-</pre></code>
+</code></pre>
                 </div>
                 <p>Thẻ <b>&lt;body&gt;</b> là một thành phần của HTML ở trên và nó chứa 2 thành phần khác:
                     <ul class="th">
                         <li>Một đề mục cấp 1 được định nghĩa bằng thẻ &lt;h1&gt;&lt;/h1&gt;.</li>
-                        <li>Một đoạn văn được định nghĩa bằng thẻ &lt;p&gt;&lt;/p&gt;.</li>
-                    </ul>
-                
-               
+                        <li>Một đoạn văn được định nghĩa bằng thẻ &lt;p&gt;&lt;/p&gt;.</li>                
                 <div class="note">
                 <p ><b>Chú ý:</b> Thẻ mở nào được ghi trước thì thẻ đóng tương ứng của nó phải viết sau các phần tử khác (tạo thành bao đóng).</p>
                 </div>
@@ -219,8 +213,7 @@
                         <img src="/img/a3.jpg" alt="a3", width="300" height="300">
                        
                 
-                <h2 class="title2">Thuộc tính khác của html</h2>
-                  
+                <h2 class="title2">Thuộc tính khác của html</h2>                 
                     <table>
                     <tr>
                         <th>Thuộc tính</th>
@@ -243,12 +236,10 @@
                         <td>Khai báo sử dụng CSS ngay trong thẻ HTML</td>
                     </tr>
                      <tr>
-                        <td>value</td>
+                        <td>value</t
                         <td>Khai báo giá trị cho thẻ &lt;input&gt;</td>
                     </tr>
-                    </table>
-                    
-        
+                    </table>  
             </div>
 
             <!-- LIÊN KẾT -->
@@ -309,7 +300,6 @@
                     </div>   
                     <p>Minh hoạ:</p> 
                         <img src="/img/pic.webp" alt="ảnh minh hoạ", width="200", height="300">
-
                 <h2 class="title2">Hình ảnh ở một thư mục khác</h2>
                 <p>Nếu file nguồn của bạn ở cùng cấp với hình ảnh bạn muốn chèn thì url chỉ là tên của file ảnh bạn muốn chèn. Tuy nhiên, nếu hình ảnh ở thư mục khác so với file nguồn của trang thì phải chỉ rõ trong url. <br>Ví dụ:</p>
                     <div class="one">&lt;img src="/../images/logo.png" alt="Logo"&gt;</div>
@@ -319,7 +309,6 @@
                     </div>
                     <p>Minh hoạ:</p>
                        <img src="/img/a8.png" alt="ảnh minh hoạ">
-                    
                 <h2 class="title2">Hình ảnh ở một website khác</h2>
                 <p>Đôi khi bạn muốn lấy ảnh từ một website khác để chèn vào trong bài viết của mình. Cách đơn giản nhất là bạn hãy lấy địa chỉ của bức ảnh và dán vào phần url.</p>
                     <div class="one">&lt;img src="http://www.tbit.vn/styles/default/xenforo/tbit.png" alt="Logo từ trang TBit"&gt;
@@ -353,8 +342,7 @@
                         <li>Thẻ <b>&lt;tr&gt;</b> dùng để khai báo thêm một hàng (table row).</li>
                         <li>Thẻ <b>&lt;td&gt;</b> dùng để khai báo thêm một ô dữ liệu (table data).</li>
                     </ul></div>
-                    <p>Minh hoạ:</p>  
-                    
+                    <p>Minh hoạ:</p>          
                     <table>
                         <tr>
                             <th>Quả</th>
@@ -368,8 +356,7 @@
                             <td>Quả cam</td>
                             <td>Hoa đào</td>
                         </tr>
-                    </table>
-                   
+                    </table>                   
                     <h2 class="title2">Gộp ô</h2>
                     <p>Để gộp nhiều ô theo cột ta dùng thuộc tính colspan như ví dụ sau:</p>
                     <div class="code">
@@ -478,8 +465,7 @@
                         </tr>
                             <td>type="I"</td>  
                             <td>Danh sách theo số La Mã: I, II, III, ...</td>
-                        </tr>
-                                           
+                        </tr>                                           
                     </table>
                 <h2 class="title2">Danh sách định nghĩa</h2>
                 <p>Dùng thẻ <b>&lt;dt&gt;</b> để khai báo các từ khoá hay mệnh đề (description term), và thẻ <b>&lt;dd&gt;</b> để khai báo phần mô tả (description data).</p>
@@ -516,6 +502,7 @@
     &lt;/li&gt;
     &lt;li&gt;JavaScript&lt;/li&gt;
  &lt;/ul&gt;
+ </code></pre>
                         </div>
                         <p>Minh hoạ:</p>
                             <div class="code">
@@ -547,23 +534,8 @@
             </div>
         </div>
     </main>
-    <script>
-        function showContent(id, element) {
-        // Ẩn tất cả phần nội dung
-        const contents = document.querySelectorAll('.content');
-        contents.forEach(c => c.classList.remove('active'));
-
-        // Hiện phần được chọn
-        const selected = document.getElementById(id);
-        if (selected) selected.classList.add('active');
-
-        // Đổi màu tab menu
-        const menuItems = document.querySelectorAll('.sidebar_menu a');
-        menuItems.forEach(item => item.classList.remove('active-link'));
-        element.classList.add('active-link');
-        }
-    </script>
-    <div data-include="partials/footer.html"></div>
+    <div data-include="partials/footer.html" style="position: relative;"></div>
     <script src="/js/include.js"></script>
+    <script src="/js/lesson.js"></script>
 </body>
 </html>

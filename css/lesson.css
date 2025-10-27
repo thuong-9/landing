@@ -1,6 +1,7 @@
 @import url('common.css');
+/* css của trang bài học */
 #banner{
-    background-image: linear-gradient(rgba(0,0,0,0.5),#099688),url(/img/a3.jpg) ;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#093696d4),url(/img/lesson.jpg) ;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -8,8 +9,7 @@
 .banner-text{
     text-align: center;
     color: #fff;
-    padding-top: 100px;
-
+    padding-top: 177px;
 }
 .banner-text h1{
     font-size: 130px;
@@ -32,6 +32,6 @@
     border: .5px solid #fff;
 }
 .banner-btn a:hover{
-    background-color: #e6f0ff;
+    background-color: #abbdd8;
   transition: background-color 0.3s;
 }
