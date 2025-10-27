@@ -45,9 +45,8 @@
                 </div>
                 <h2 class="title2">Ví dụ về HTML</h2>
                 <p>Ví dụ về một tài liệu web viết bằng HTML đơn giản như sau:</p>
-                <div class="khung">
-<pre><code>
-&lt;!DOCTYPE html&gt;
+                <div class="code">
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="vi"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -65,9 +64,8 @@
             <div id="cautruc" class="content">
                 <h1 class="main-title">Cấu trúc của một tài liệu HTML</h1>
                 <p>Cấu trúc của HTML:</p>
-                <div class="khung">
-<pre><code>
-&lt;!DOCTYPE html&gt;
+                <div class="code">
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="vi"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -87,7 +85,7 @@
                 </ul>
                 </div>
                 <div class="note">
-                    <p><b>Chú ý</b>: Chỉ những phần nằm giữa <i>&lt;body&gt;</i> và <i>&lt;/body&gt;</i> mới được hiển thị trên trang web.</p>
+                    <p><b>Chú ý</b>: Chỉ những phần nằm giữa <i>&lt;body&gt;</i><i>&lt;/body&gt;</i> mới được hiển thị trên trang web.</p>
                 </div>
             </div>
 
@@ -156,9 +154,8 @@
                     </div>
                 <h2 class="title2">Cấu trúc bao đóng của HTML</h2>
                 <p>Một tài liệu HTML có cấu trúc bao đóng, hay còn gọi là cấu trúc tổ chim (nested), có nghĩa là thành phần tài liệu này có thể chứa các thành phần khác trong nó.</p>
-                <div class="khung">
-<pre><code>
-&lt;!DOCTYPE html&gt;
+                <div class="code">
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
     &lt;h1&gt;Đề mục của tôi&lt;/h1&gt;
@@ -167,9 +164,13 @@
 &lt; /html&gt;
 </pre></code>
                 </div>
-                <p>Thẻ &lt;body&gt; là một thành phần của HTML ở trên và nó chứa 2 thành phần khác:
-                Một đề mục cấp 1 được định nghĩa bằng thẻ &lt;h1&gt; và &lt;/h1&gt;.
-                Một đoạn văn được định nghĩa bằng thẻ &lt;p&gt; và &lt;/p&gt;.</p>
+                <p>Thẻ <b>&lt;body&gt;</b> là một thành phần của HTML ở trên và nó chứa 2 thành phần khác:
+                    <ul class="th">
+                        <li>Một đề mục cấp 1 được định nghĩa bằng thẻ &lt;h1&gt;&lt;/h1&gt;.</li>
+                        <li>Một đoạn văn được định nghĩa bằng thẻ &lt;p&gt;&lt;/p&gt;.</li>
+                    </ul>
+                
+               
                 <div class="note">
                 <p ><b>Chú ý:</b> Thẻ mở nào được ghi trước thì thẻ đóng tương ứng của nó phải viết sau các phần tử khác (tạo thành bao đóng).</p>
                 </div>
@@ -187,25 +188,37 @@
                     </ul>
                 </div>
                 <h2 class="title2">Thuộc tính Lang</h2>
-                <div class="khung">
-                    <p> &lt;lang&gt;được khai báo trong thẻ mở html. Thuộc tính này khai báo ngôn ngữ của tài liệu HTML</p>
-                        &lt;html lang = "en"&gt;
-                    <p>"en" là kí hiệu ngôn ngữ của tiếng anh</p>
-                </div>
+                    <p> <b>&lt;lang&gt;</b> được khai báo trong thẻ mở html. Thuộc tính này khai báo ngôn ngữ của tài liệu HTML</p>
+                    <ul class="th">
+                        <li>"en" là mã ngôn ngữ của tiếng anh </li>
+                        <li>"vi" là mã ngôn ngữ của tiếng việt</li>
+                    </ul>
+                    <p>Ví dụ:</p>
+                        <div class="one">&lt;html lang = "en"&gt;</div>
                 <h2 class="title2">Thuộc tính Title</h2>
-                <p>Thuộc tính title dùng để định nghĩa tiêu đề của một thành phần HTML.</p>
+                <p>Thuộc tính title dùng để định nghĩa tiêu đề của một trang web</p>
+                    <div class="one">&lt;title&gt; EasyCode &lt;/title&gt;</div>
+                    <p>Minh hoạ:</p>
+                    <img src="/img/a6.png" alt="a6">
                 <h2 class="title2">Thuộc tính Href</h2>
-                <p>Thẻ &lt;a&gt; dùng để khai báo một liên kết trên trang web. Muốn khai báo địa chỉ đích của liên kết ta viết thêm thuộc tính href cho nó. <br>Ví dụ:</p>
-                    <div class="khung">&lt;a&gt; href="https://google.com">Tới trang google&lt;/a&gt;</div>
+                <p>Thẻ <b>&lt;a&gt;</b> dùng để khai báo một liên kết trên trang web. Muốn khai báo địa chỉ đích của liên kết ta viết thêm thuộc tính <b>href</b> cho nó. <br>Ví dụ:</p>
+                    <div class="one">&lt;a href="https://google.com">Tới trang google&gt;&lt;/a&gt;</div>
+                    <p>Minh hoạ:</p>
+                    <img src="/img/a5.png" alt="a5">
                 <h2 class="title2">Thuộc tính Về kích thước</h2>
                 <p>Thuộc tính width và height dùng để khai báo kích thước của đối tượng, như của hình ảnh chẳng hạn.</p>
-                <div class="khung">
-                    <ul>
-                        <li>width: chiều rộng</li>
-                        <li>height: chiều cao</li>
-                    </ul>
-                    &lt;img src="/tbit.jpg" width="400" height="150"&gt;
-                </div>    
+                    <div class="th">
+                        <ul>
+                            <li>width: chiều rộng</li> 
+                            <li>height: chiều cao</li> 
+                        </ul> 
+                    </div>
+                    <p>Ví dụ:</p>
+                        <div class="one">&lt;img src="/tbit.jpg" width="300" height="300"&gt;</div>
+                        <p>Minh hoạ:</p>
+                        <img src="/img/a3.jpg" alt="a3", width="300" height="300">
+                       
+                
                 <h2 class="title2">Thuộc tính khác của html</h2>
                   
                     <table>
@@ -231,9 +244,10 @@
                     </tr>
                      <tr>
                         <td>value</td>
-                        <td>Khai báo giá trị cho thẻ <input></td>
+                        <td>Khai báo giá trị cho thẻ &lt;input&gt;</td>
                     </tr>
                     </table>
+                    
         
             </div>
 
@@ -241,19 +255,19 @@
             <div id="lienket" class="content">
                 <h1 class="main-title">Liên kết trong HTML</h1>
                 <h2 class="title2">Cú pháp chèn liên kết vào HTML</h2>
-                <p>Cú pháp</p>
+                <p>Thuộc tính <b>&lt;href&gt;</b> là bắt buộc để chỉ ra đích đến của liên kết, <b>&lt;url&gt;</b> là địa chỉ trang web đích.</p>
+                <p>Ví dụ:</p>
                     <div class="one">
-                        &lt;a&gt;a href="/url">phần văn bản liên kết&lt;/a&gt;
+                        &lt;a href="/url">phần văn bản liên kết&gt;&lt;/a&gt;
                     </div>
-                <p>Thuộc tính href là bắt buộc để chỉ ra đích đến của liên kết, url là địa chỉ trang web đích.</p>
                 <h2 class="title2">Liên kết cục bộ</h2>
-                <p>Thông thường các website được tổ chức dạng thư mục. Một website có thể có nhiều trang web. Nếu muốn di chuyển giữa các trang web trong cùng 1 website ta có thể dùng url cục bộ có dạng đường dẫn tương đối.</p>
-                    <div class="one">&lt;a&gt;href="/hoc_css.html">Hướng dẫn học CSS&lt;/a&gt;
+                <p>Thông thường các website được tổ chức dạng thư mục. Một website có thể có nhiều trang web. Nếu muốn di chuyển giữa các trang web trong cùng 1 website ta có thể dùng <b>&lt;url&gt;</b> cục bộ có dạng đường dẫn tương đối.</p>
+                    <div class="one">&lt;a href="/hoc_css.html">Hướng dẫn học CSS&gt;&lt;/a&gt;
                     </div>
                 <h2 class="title2">Thuộc tính target</h2>
-                <p>Thuộc tính target của thẻ &lt;a&gt; dùng để chỉ ra nơi sẽ hiển thị trang web của liên kết.
-                <br>Ví dụ, muốn trình duyệt mở một cửa sổ (tab) mới khi nhấn vào liên kết bạn cần khai báo.</p>
-                    <div class="one"> &lt;a&gt;href="/hoc_css.html" target="_blank">Hướng dẫn học CSS&lt;/a&gt;</div>
+                <p>Thuộc tính target của thẻ <b>&lt;a&gt;</b> dùng để chỉ ra nơi sẽ hiển thị trang web của liên kết.
+                <br>Ví dụ, muốn trình duyệt mở một cửa sổ (tab) mới khi nhấn vào liên kết bạn cần khai báo:</p>
+                    <div class="one"> &lt;a href="/hoc_css.html" target="_blank">Hướng dẫn học CSS&gt;&lt;/a&gt;</div>
                 <table>
                     <tr>
                         <th>Giá trị</th>
@@ -275,7 +289,6 @@
                         <td>_top</td>
                         <td>Mở liên kết trên toàn cửa sổ.</td>
                     </tr>
-                
                 </table>
             </div>
 
@@ -283,26 +296,30 @@
             <div id="hinhanh" class="content">
                 <h1 class="main-title">Hình ảnh trong HTML</h1>
                 <h2 class="title2">Thẻ &lt;img&gt; để thêm hình ảnh</h2>
-                <p>Trong HTML, muốn thêm hình ảnh vào trang web bạn dùng thẻ img. Thẻ img chỉ có thẻ mở và có thêm các tham số để mô tả hình ảnh.</p>
-                     <div class="one">&lt;img src="/url" alt="some_text"&gt;</div>
-                <p>Thuộc tính src (viết tắt của source) dùng để định nghĩa đường dẫn tới ảnh thông qua url của nó. Thuộc tính alt là dòng văn bản thay thế như đã nói ở những phần trước.</p>
+                <p>Trong HTML, muốn thêm hình ảnh vào trang web bạn dùng thẻ <b>&lt;img&gt;</b>. Thẻ img chỉ có thẻ mở và có thêm các tham số để mô tả hình ảnh.</p>
+                <p>Ví dụ:</p>
+                    <div class="one">&lt;img src="/img/pic.png" alt="ảnh"&gt;</div>
+                <p>Thuộc tính <b>src</b> (viết tắt của source) dùng để định nghĩa đường dẫn tới ảnh thông qua <b>url</b> của nó. Thuộc tính <b>alt</b> là dòng văn bản thay thế như đã nói ở những phần trước.</p>
                 <h2 class="title2">Kích thước của hình ảnh</h2>
-                <p>Nếu bạn muốn hình ảnh của mình có kích thước (chiều rộng và chiều cao) cố định hãy điều chỉnh bằng các thuộc tính width, height hoặc dùng style: <br>
-                    Ví dụ không dùng style:</p>
-                     <div class="one">&lt;img src="/logo_TBit.png" alt="Logo của TBit" width="100" height="30"&gt;
-                <p>Ví dụ dùng style:</p>  
-                    &lt;img src="/logo_TBit.png" alt="Logo của TBit" style="width:100px;height:30px;"&gt;
-                    </div >
+                <p>Nếu bạn muốn hình ảnh của mình có kích thước (chiều rộng và chiều cao) cố định hãy điều chỉnh bằng các thuộc tính width, height: <br>
+                <p>Ví dụ:</p>
+                    <div class="one">&lt;img src="/tbit.jpg" alt="ảnh" width="300" height="300""&gt;</div > 
                     <div class="note">
-                         <p><b>Chú ý:</b> Không nên co giãn kích thước của bức ảnh khác với tỉ lệ vốn có giữa chiều cao và chiều rộng. Cách tốt nhất bạn chỉ điều chỉnh 1 tham số, hoặc là width hoặc là height.</p>
-                    </div>
+                        <p><b>Chú ý:</b> Không nên co giãn kích thước của bức ảnh khác với tỉ lệ vốn có giữa chiều cao và chiều rộng. Cách tốt nhất bạn chỉ điều chỉnh 1 tham số, hoặc là width hoặc là height.</p>
+                    </div>   
+                    <p>Minh hoạ:</p> 
+                        <img src="/img/pic.webp" alt="ảnh minh hoạ", width="200", height="300">
+
                 <h2 class="title2">Hình ảnh ở một thư mục khác</h2>
                 <p>Nếu file nguồn của bạn ở cùng cấp với hình ảnh bạn muốn chèn thì url chỉ là tên của file ảnh bạn muốn chèn. Tuy nhiên, nếu hình ảnh ở thư mục khác so với file nguồn của trang thì phải chỉ rõ trong url. <br>Ví dụ:</p>
                     <div class="one">&lt;img src="/../images/logo.png" alt="Logo"&gt;</div>
                     <p>Hình ảnh ở thư mục images ngang cấp với thư mục chứa file nguồn của trang. Dấu ../ là chỉ đường dẫn lên thư mục cha.</p>
                     <div class="note">
-                       <p><b>Chú ý:</b> Nếu không định nghĩa chính xác vị trí của bức ảnh thì sẽ xuất hiện kí hiệu báo lỗi không tìm thấy ảnh và có thể hiển thị đoạn văn bản trong thuộc tính alt.</p>
+                       <p><b>Chú ý:</b> Nếu không định nghĩa chính xác vị trí của bức ảnh thì sẽ xuất hiện kí hiệu báo lỗi không tìm thấy ảnh và có thể hiển thị đoạn văn bản trong thuộc tính <b>alt.</b></p>
                     </div>
+                    <p>Minh hoạ:</p>
+                       <img src="/img/a8.png" alt="ảnh minh hoạ">
+                    
                 <h2 class="title2">Hình ảnh ở một website khác</h2>
                 <p>Đôi khi bạn muốn lấy ảnh từ một website khác để chèn vào trong bài viết của mình. Cách đơn giản nhất là bạn hãy lấy địa chỉ của bức ảnh và dán vào phần url.</p>
                     <div class="one">&lt;img src="http://www.tbit.vn/styles/default/xenforo/tbit.png" alt="Logo từ trang TBit"&gt;
@@ -313,10 +330,10 @@
             <div id="bangbieu" class="content">
                 <h1 class="main-title">Bảng biểu trong HTML</h1>
                 <h2 class="title2">Định nghĩa một bảng biểu trong HTML</h2>
+                    <p>Ô dữ liệu định nghĩa bằng thẻ <b>&lt;td&gt;</b> là thành phần chứa dữ liệu của bảng biểu. Nó có thể chứa văn bản, ảnh, danh sách,... thậm chí là 1 bảng biểu khác.</p>
                     <p>Ví dụ:</p> 
-                    <div class="khung">
-<pre><code>
-&lt;table&gt;
+                    <div class="code">
+<pre><code>&lt;table&gt;
 &lt;tr&gt;
     &lt;th&gt;Quả&lt;/th&gt;
     &lt;th&gt;Hoa&lt;/th&gt;
@@ -329,6 +346,13 @@
 &lt;/tr&gt;
 &lt;/table&gt; 
 </code> </pre></div>
+                    <p>Giải thích cho các thẻ:</p>
+                        <div class="khung"> <ul>
+                        <li>Thẻ <b>&lt;table&gt;</b> dùng để khai báo tạo một bảng biểu.</li>
+                        <li>Thẻ <b>&lt;th&gt;</b> dùng để khai báo các ô tiêu đề (table heading).</li>
+                        <li>Thẻ <b>&lt;tr&gt;</b> dùng để khai báo thêm một hàng (table row).</li>
+                        <li>Thẻ <b>&lt;td&gt;</b> dùng để khai báo thêm một ô dữ liệu (table data).</li>
+                    </ul></div>
                     <p>Minh hoạ:</p>  
                     
                     <table>
@@ -345,19 +369,11 @@
                             <td>Hoa đào</td>
                         </tr>
                     </table>
-                    <p>Giải thích cho các thẻ:</p>
-                        <div class="khung"> <ul>
-                        <li>Thẻ &lt;table&gt; dùng để khai báo tạo một bảng biểu.</li>
-                        <li>Thẻ &lt;th&gt; dùng để khai báo các ô tiêu đề (table heading).</li>
-                        <li>Thẻ &lt;tr&gt; dùng để khai báo thêm một hàng (table row).</li>
-                        <li>Thẻ &lt;td&gt; dùng để khai báo thêm một ô dữ liệu (table data).</li>
-                    </ul></div>
-                     <p>Ô dữ liệu định nghĩa bằng thẻ &lt;td&gt; là thành phần chứa dữ liệu của bảng biểu. Nó có thể chứa văn bản, ảnh, danh sách,... thậm chí là 1 bảng biểu khác.</p>
+                   
                     <h2 class="title2">Gộp ô</h2>
                     <p>Để gộp nhiều ô theo cột ta dùng thuộc tính colspan như ví dụ sau:</p>
-                    <div class="khung">
-<pre><code>     
-&lt;table&gt;
+                    <div class="code">
+<pre><code>&lt;table&gt;
 &lt;tr&gt;
     &lt;th&gt;Quả&lt;/th&gt;
     &lt;th colspan="2"&gt;Hoa&lt;/th&gt;
@@ -392,9 +408,8 @@
                     </table>
 
                     <p>Để gộp nhiều ô theo dòng ta dùng thuộc tính rowspan như ví dụ sau:</p>
-                    <div class="khung">    
-<pre><code> 
-&lt;table&gt;
+                    <div class="code">    
+<pre><code>&lt;table&gt;
 &lt;tr&gt;
     &lt;th&gt;Quả&lt;/th&gt;
     &lt;td&gt;Quả nho&lt;/td&gt;
@@ -428,25 +443,23 @@
             <div id="danhsach" class="content">
                 <h1 class="main-title">Danh sách trong HTML</h1>
                 <h2 class="title2">Danh sách không có thứ tự</h2>
-                <p>Một danh sách không có thứ tự được định nghĩa bằng thẻ &lt;ul&gt; và các phần tử của danh sách này định nghĩa bằng thẻ &lt;li&gt;.Theo mặc định danh sách loại này sẽ có kí hiệu đầu dòng (bullet).</p>
-                    <div class="khung">
-<pre><code>
-&lt;ul&gt;
+                <p>Một danh sách không có thứ tự được định nghĩa bằng thẻ <b>&lt;ul&gt;</b> và các phần tử của danh sách này định nghĩa bằng thẻ <b>&lt;li&gt;</b>.Theo mặc định danh sách loại này sẽ có kí hiệu đầu dòng (bullet).</p>
+                    <div class="code">
+<pre><code>&lt;ul&gt;
     &lt;li&gt;HTML&lt;/li&gt;
     &lt;li&gt;CSS&lt;/li&gt;
 &lt;/ul&gt;    
 </code></pre></div>
                 <h2 class="title2">Danh sách có thứ tự</h2>
-                <p>Một danh sách có thứ tự trong HTML được định nghĩa bằng thẻ  &lt;ol&gt; với các phần từ được định nghĩa bằng thẻ &lt;li&gt;.</p>
-                    <div class="khung">
-<pre><code> 
-&lt;ol&gt;
+                <p>Một danh sách có thứ tự trong HTML được định nghĩa bằng thẻ <b>&lt;ol&gt;</b> với các phần từ được định nghĩa bằng thẻ <b>&lt;li&gt;</b>.</p>
+                    <div class="code">
+<pre><code>&lt;ol&gt;
     &lt;li&gt;Bước 1&lt;/li&gt;
     &lt;li&gt;Bước 2&lt;/li&gt;
 &lt;/ol&gt;
 </code></pre></div>
                 <h2 class="title2">Các kiểu danh sách có thứ tự</h2>
-                <p>Dùng thuộc tính type để chọn kiểu danh sách có thứ tự, các kiểu theo bảng dưới:</p>
+                <p>Dùng thuộc tính <b>type </b>để chọn kiểu danh sách có thứ tự, các kiểu theo bảng dưới:</p>
                 <table>
                         <tr>
                             <th>Khai báo</th>
@@ -469,33 +482,31 @@
                                            
                     </table>
                 <h2 class="title2">Danh sách định nghĩa</h2>
-                <p>Dùng thẻ &lt;dt&gt; để khai báo các từ khoá hay mệnh đề (description term), và thẻ &lt;dd&gt; để khai báo phần mô tả (description data).</p>
+                <p>Dùng thẻ <b>&lt;dt&gt;</b> để khai báo các từ khoá hay mệnh đề (description term), và thẻ <b>&lt;dd&gt;</b> để khai báo phần mô tả (description data).</p>
                 <div class="khung">
-<pre><code>
- &lt;dl&gt;
-    &lt;dt&gt;HTML&lt;/dt&gt;
-    &lt;dd&gt;- ngôn ngữ đánh dấu siêu văn bản.&lt;/dd&gt;
-    &lt;dt&gt;CSS&lt;/dt&gt;
-    &lt;dd&gt;- bảng định kiểu xếp tầng.&lt;/dd&gt;
-    &lt;dt&gt;JavaScript&lt;/dt&gt;
-    &lt;dd&gt;- ngôn ngữ lập trình kịch bản trên trang web.&lt;/dd&gt;
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;HTML:&lt;/dt&gt;
+    &lt;dd&gt;- Ngôn ngữ đánh dấu siêu văn bản.&lt;/dd&gt;
+    &lt;dt&gt;CSS:&lt;/dt&gt;
+    &lt;dd&gt;- Bảng định kiểu xếp tầng.&lt;/dd&gt;
+    &lt;dt&gt;JavaScript:&lt;/dt&gt;
+    &lt;dd&gt;- Ngôn ngữ lập trình kịch bản.&lt;/dd&gt;
 &lt;/dl&gt;
 </code></pre></div>
                     <p>Minh hoạ:</p>
-                    <div class="khung">
+                    <div class="code">
                         <dl>
-                            <dt>HTML</dt>
-                            <dd>- ngôn ngữ đánh dấu siêu văn bản.</dd>
-                            <dt>CSS</dt>
-                            <dd>- bảng định kiểu xếp tầng.</dd>
-                            <dt>JavaScript</dt>
-                            <dd>- ngôn ngữ lập trình kịch bản trên trang web.</dd>
+                            <dt>HTML:</dt>
+                            <dd>- Ngôn ngữ đánh dấu siêu văn bản.</dd>
+                            <dt>CSS:</dt>
+                            <dd>- Bảng định kiểu xếp tầng.</dd>
+                            <dt>JavaScript:</dt>
+                            <dd>- Ngôn ngữ lập trình kịch bản.</dd>
                         </dl></div>
                     <h2 class="title2">Danh sách lồng nhau</h2>
                         
-                        <div class="khung">
-<pre><code>
-&lt;ul&gt;
+                        <div class="code">
+<pre><code>&lt;ul&gt;
     &lt;li&gt;HTML&lt;/li&gt;
     &lt;li&gt;CSS
         &lt;ul&gt;
@@ -507,13 +518,13 @@
  &lt;/ul&gt;
                         </div>
                         <p>Minh hoạ:</p>
-                            <div class="khung">
+                            <div class="code">
                             <ul>
                                 <li>HTML</li>
                                 <li>CSS
                                     <ul>
-                                    <li>CSS2</li>
-                                    <li>CSS3</li>
+                                        <li>CSS2</li>
+                                        <li>CSS3</li>
                                     </ul>
                                 </li>
                                 <li>JavaScript</li>
@@ -524,7 +535,7 @@
             <div id="chuthich" class="content">
                 <h1 class="main-title">Chú thích và trích dẫn</h1>
                 <h2 class="title2">Chú thích trong HTML</h2>
-                <p> Dùng cặp thẻ &lt;!-- Đây là nội dung chú thích --&gt;để thêm chú thích trong HTML</p>
+                <p> Dùng cặp thẻ <b>&lt;!-- Đây là nội dung chú thích --&gt;</b>để thêm chú thích trong HTML</p>
                 <p>Các thẻ trích dẫn:</p>
                 <div class="khung">
                 <ul>

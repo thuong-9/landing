@@ -1,11 +1,8 @@
 @import url('common.css');
 /* css của trang bài học */
 .main-content{
-    background-color: #e5e5f7;
+    background-color: #e5f1f7;
     background-size: 7px 7px;
-    background-image: repeating-linear-gradient(45deg, #dbddfbce 0, 
-    #c5cbf8ec 0.7000000000000001px,
-    #ffffff 0, #ffffff 50%);
 }
 ul.list {
   list-style: none;  
@@ -21,12 +18,18 @@ ul.list {
     padding: 0 20px;
 }
 .main_box .sidebar_menu{
-    position: fixed;     
-    width: 280px;
+    position: sticky;            
+    top: 80px;                  
+    align-self: flex-start;     
     flex-shrink: 0;
-    padding:0;
-    background: rgba(255, 255, 255, 0.1);   
-}   
+    width: 280px;                
+    height: fit-content;       
+    max-height: calc(100vh - 80px); 
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+  }   
 .sidebar_menu .logo{
     background-color: #fff;
     align-content: center;
@@ -57,16 +60,11 @@ ul.list {
     text-decoration: none;
     padding: 8px 20px;
 }
-
-
 .main-content{
     flex-grow: 1;
     padding: 10px 50px;
     border-left: 1px solid #efefef;
-    margin-left: 280px;
-
 }
-
 .main-title {
     color: white;
     font-size: 30px;
@@ -86,37 +84,30 @@ ul.list {
     color:#0097e6
 }
 .khung {
-  background: #f9f6d9;
+  background: #f8fcff;
   border-radius: 15px;
-  padding: 20px;
-  width: 650px;
+  padding: 15px 55px;
+  width: 550px;
   font-size: 16px;
-  justify-items: center;
   margin: 20px auto; 
-  display: block;   
-  text-align:left;  
+  display: block;    
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #0077cc;
 }
 .one{
-  background: #f9f6d9;
+  background: #f8fcff;
   border-radius: 15px;
   padding: 10px 20px;
-  width: 650px;
-  font-size: 16px;
+  width: 580px;
+  font-size: 17px;
   justify-items: center;
   margin: 20px auto; 
   display: block;   
   text-align: center;  
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #0077cc;
 }
 
-.khung pre {
-  margin: 0;
-  text-align: left;
-  font-family: monospace;
-  white-space: pre-wrap; 
-  word-break: break-word;
-}
 .content table {
   width: 80%;
   border-collapse: collapse;
@@ -164,9 +155,9 @@ ul.list {
   border-radius: 10px;
   padding: 15px 20px;
   margin: 25px auto;
-  width: 90%;
+  width: 800px;
   color: #1b5e20;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.6;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -176,4 +167,22 @@ ul.list {
 }
 p{
   font-size: 18px;
+}
+.code{
+  background: #f8fcff;
+  border-radius: 15px;
+  padding: 15px 110px;
+  width: 550px;
+  font-size: 16px;
+  margin: 20px auto; 
+  display: block;    
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #0077cc;
+}
+.th{
+  padding: 1px 50px;
+}
+img{
+  display: block;
+  margin: 20px auto;
 }
