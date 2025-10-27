@@ -5,9 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 160px); 
+    min-height: 600px; 
     background: #f8f9fa;
-    margin-top: 60px;
 }
 
 .auth-box {
