@@ -17,16 +17,24 @@ ul.list {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* Scrollable sticky sidebar like exercises */
 .main_box .sidebar_menu{
-    position: fixed;
-    top: 71px;
-    /* width: 280px; */
-    padding: 0 0 20px 0;
-    background: rgba(255, 255, 255, 0.9);
-    border-right: 1px solid #ddd;
-    box-shadow: 2px 0 6px rgba(0,0,0,0.1);
-    min-width: 300px;
-}   
+  position: sticky;
+  top: 71px;
+  background: rgba(255, 255, 255, 0.9);
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  min-width: 300px;
+  height: 89vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Ẩn trên Firefox */
+}
+
+/* Ẩn thanh cuộn trên Chrome, Edge, Safari */
+.main_box .sidebar_menu::-webkit-scrollbar {
+  display: none;
+}
 .sidebar_menu .logo{
     background-color: #fff;
     align-content: center;
@@ -61,7 +69,7 @@ ul.list {
     flex-grow: 1;
     padding: 10px 50px;
     border-left: 1px solid #efefef;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     margin-top: 71px;
 }
 .main-title {
