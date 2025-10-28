@@ -5,39 +5,59 @@ ul.list{
   padding-left: 0;
   margin: 0;
 }
-
-.css-lesson {
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+body {
+  margin: 0;
+  padding: 0;
+}
+.main-content{
+    margin-left: 336px;
+    width: 100%;
 }
 
-.css-lesson .menu{
-  width: 280px;
-  flex-shrink: 0;
-  padding: 0;
-  background: rgba(255,255,255,0.1);
+.css-lesson {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #e5f1f7;
+}
+
+.css-lesson .menu {
+    position: fixed;
+    top: 71px;
+    padding: 0 0 20px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+    min-width: 300px;
+
+    /* ✨ Phần thêm mới để cuộn */
+    overflow-y: auto;            /* Cho phép cuộn dọc */
+    scrollbar-width: thin;       /* Thanh cuộn mảnh trên Firefox */
+    scrollbar-color: #bbb #f9f9f9; /* Màu thanh cuộn */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .menu .logo{
-  background-color: #fff;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 30px;
-  font-weight: 700;
-  color: #007bff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
+    background-color: #fff;
+    align-content: center;
+    padding: 15px ;
+    font-size: 28px; 
+    font-weight: 700; 
+    color: #007bff; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    }   
 
 .menu .list{
     list-style: none;
-    margin: 3px 0;
     padding: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu .list li{
@@ -45,73 +65,93 @@ ul.list{
     padding: 0;
 }
 
-.menu .list li:hover{
+.menu .list li:hover {
     border-left: 1px solid #ffffff;
     box-shadow: 0 0 4px rgba(167, 167, 167, 0.5);
 }
-.menu .list a{
+
+/* Màu và hiệu ứng khi hover hoặc đang chọn */
+.menu .list a {
     display: block;
     color: #4494df;
     font-size: 22px;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 8px 20px;
 }
+
+/* Khi mục được chọn */
+.menu .list a.active-link {
+  color: #fff;
+  background: #4494df;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
 
 /* KHU VỰC NỘI DUNG */
 .NoiDung {
-  flex-grow: 1;
-  padding: 20px 40px;
-  border-left: 1px solid #efefef;
+    flex-grow: 1;
+    padding: 10px 50px;
+    border-left: 1px solid #efefef;
+    margin-left: 300px;
+    margin-top: 71px;
 }
 
 .main-title {
     color: white;
-    font-size: 1.7em;
+    font-size: 30px;
     background-color: #0097e6;
-    text-align: center;
-    padding: 5px   
-}
-.main-title i{
-  font-size: 1.5em;
-  background-color: #0097e6;
+    text-align:center;
+    border-radius: 8px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),   
+        inset 0 2px 4px rgba(255, 255, 255, 0.3); 
 }
 
 .title2 {
     font-weight: 50px;
-    font-size: 1.8em;
+    font-size: 32px;
     margin-top: 1em;
     margin-bottom: 1px;
     color:#0097e6
 }
 
-.vien {
-  border: 2px solid #0632d3;          /* Khung viền bao quanh */
-  border-radius: 10px;             /* Bo góc mềm mại */
-  padding: 10px;                   /* Khoảng cách trong khung */
-  background-color: #f9f9f9;       /* Màu nền nhẹ */
-  line-height: 1.6;                /* Giãn dòng dễ đọc */
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-.vien p {
-  text-indent: 1em;                /* Thụt đầu dòng khoảng 1 tab */
-  margin-bottom: 10px;             /* Cách nhau giữa các đoạn */
-  text-align: justify;             /* Canh đều hai bên cho đẹp */
-}
-.vien b {
-  color: #0077cc;                  /* Tô màu nổi bật cho chữ in đậm */
-}
-.vien ul {
-    padding-left: 40px; /* thụt vào 2 tab */
-    margin-top: 5px;
-}
-.vien li {
-    margin: 6px 0;
+
+.one{
+  background: #f8fcff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 580px;
+  font-size: 17px;
+  justify-items: center;
+  margin: 20px auto; 
+  display: block;   
+  text-align: center;  
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #0077cc;
 }
 
-.vidu {
-  color:#4494df;
-  font-size: 1.5em;
+.doc {
+   display: flex;
 }
+
+.note {
+  background: #e8f9e9;             
+  border-left: 6px solid #28a745;  
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 25px auto;
+  width: 800px;
+  color: #1b5e20;
+  font-size: 18px;
+  line-height: 1.6;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.note:hover {
+  background: #d2f5d4;            
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.3);
+}
+
 
 .color-box {
   display: inline-block;
@@ -172,32 +212,46 @@ ul.list{
     color: #0056b3;
 }
 
-/*
-h2 {
-  color: #2170a1;
-  border-bottom: 2px solid #3498db;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-}
-*/
 p, li {
   line-height: 1.6;
   color: #333;
 }
 
-pre {
+/* pre {
   background: #f4f4f4;
   padding: 12px;
   border-left: 4px solid #3498db;
   border-radius: 5px;
   overflow-x: auto;
   margin: 10px 0;
+} */
+
+.khung {
+  background: #fff;
+  border-radius: 15px;
+  padding: 19px 18px;
+  width: 736px;
+  font-size: 16px;
+  margin: 20px auto; 
+  display: block;    
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #0077cc;
 }
 
-code {
-  font-family: Consolas, monospace;
-  font-size: 15px;
-  color: #222;
+.code{
+  background: #fff;
+  border-radius: 15px;
+  padding: 19px 18px;
+  width: 736px;
+  font-size: 16px;
+  margin: 20px auto; 
+  display: block;    
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  color: #0077cc;
+}
+
+.khung p{
+  text-indent: 1em;
 }
 
 hr {
@@ -206,9 +260,186 @@ hr {
   background: #ccc;
   margin: 25px 0;
 }
+.content ol{
+  padding-left: 40px; /* thụt vào 2 tab */
+    margin-top: 5px;
+}
+
+/* Ngăn tràn ngang toàn trang */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Sửa lỗi tràn ngang do padding + flex */
+.css-lesson {
+  width: 100%;
+  box-sizing: border-box; /* Tính padding vào tổng width */
+  padding: 0 10px; /* hoặc giảm bớt */
+}
+
+/* Giới hạn nội dung không vượt khung */
+.NoiDung {
+  overflow-x: auto; /* Cho phép cuộn nếu có bảng quá rộng */
+  max-width: 100%;
+}
+
+.content ul{
+  padding-left: 40px; /* thụt vào 2 tab */
+    margin-top: 5px;
+}
+
+/* --- Thanh điều hướng dọc --- */
+ul.vertical {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #a9cbe8;
+}
+
+ul.vertical li a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+ul.vertical li a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul.vertical li a.active {
+  background-color: #009688;
+  color: white;
+}
 
 
+/* --- Thanh điều hướng ngang --- */
+ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #a9cbe8;
+}
 
+ul.horizontal li {
+  float: left;
+}
 
+ul.horizontal li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
+ul.horizontal li a:hover {
+  background-color: #04AA6D;
+}
 
+ul.horizontal li a.active {
+  background-color: #009688;
+}
+/* --- Thanh điều hướng dọc --- */
+.vertical {
+  list-style-type: none;
+  padding: 0;
+  width: 200px;
+  background-color: #a9cbe8;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.vertical li a {
+  display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.vertical li a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.vertical li a.active {
+  background-color: #009688;
+  color: white;
+}
+.content1 {
+    width: 590px;
+}
+
+/* --- Thanh điều hướng dọc1 --- */
+ul.vertical1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555555;
+}
+
+ul.vertical1 li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul.vertical1 li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+ul.vertical1 li a.active1 {
+  background-color: #555555;
+  color: white;
+}
+
+li.vertical {
+  text-align: center;
+  border-bottom: 1px solid #555555;
+}
+
+.vertical li:last-child {
+  border-bottom: none;
+}
+
+.vien h3{
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/* --- Thanh điều hướng ngang1 --- */
+ul.horizontal1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.horizontal1 li {
+  float: left;
+}
+
+ul.horizontal1 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal1 li a:hover {
+  background-color: #111111;
+}
+
+ul.horizontal1 li a.active1 {
+  background-color: #111111;
+}
