@@ -193,26 +193,162 @@ input:focus, textarea:focus {
   outline: none;
 }
 
-/* ======== FOOTER ======== */
+/* ======== FOOTER ENHANCED ======== */
+.container.footer-inner {
+    padding: 0;
+}
 .site-footer {
-  background: var(--panel);
-  border-top: 1px solid var(--border);
-  padding: 30px 0;
+  position: relative;
+  background: url("/img/footer4.png") center/cover no-repeat;
+  color: #002b55;
   margin-top: auto;
 }
+
+.footer-overlay {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 50px 0 20px;
+}
+
 .footer-inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 90px;
+  color: #003a73;
 }
-.site-footer nav a {
-  color: var(--muted);
+
+/* Cột logo */
+.footer-logo {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.footer-logo h3 {
+  color: #0058cc;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.footer-logo p {
+  color: #0b2f59;
+}
+
+/* Cột thông tin trang web */
+.footer-about {
+  flex: 1.5;
+  min-width: 280px;
+  color: #003a73;
+}
+
+.footer-about h4 {
+  color: #004a99;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.footer-about p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.footer-about a {
+  color: #0078ff;
   text-decoration: none;
-  margin-left: 12px;
-  transition: color 0.2s ease;
 }
-.site-footer nav a:hover {
-  color: var(--primary);
+
+.footer-about a:hover {
+  text-decoration: underline;
+}
+
+/* Cột phải chứa Liên hệ + MXH */
+.footer-right {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-info h4,
+.footer-social h4 {
+  color: #004a99;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+/* Liên hệ */
+.footer-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-info li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0b2f59;
+  font-weight: 500;
+}
+
+.footer-info a {
+  color: #003a73;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  color: #0078ff;
+  text-decoration: underline;
+}
+
+/* Mạng xã hội */
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 120, 255, 0.08);
+  color: #004a99;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social:hover {
+  background: #0078ff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Dòng bản quyền */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(0, 60, 120, 0.2);
+  margin-top: 40px;
+  padding-top: 15px;
+  color: #003a73;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px 0;
 }
