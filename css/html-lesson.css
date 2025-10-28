@@ -1,11 +1,8 @@
 @import url('common.css');
 /* css của trang bài học */
 .main-content{
-    background-color: #e5e5f7;
+    background-color: #e5f1f7;
     background-size: 7px 7px;
-    background-image: repeating-linear-gradient(45deg, #dbddfbce 0, 
-    #c5cbf8ec 0.7000000000000001px,
-    #ffffff 0, #ffffff 50%);
 }
 ul.list {
   list-style: none;  
@@ -21,18 +18,6 @@ ul.list {
     padding: 0 20px;
 }
 .main_box .sidebar_menu{
-/*     position: sticky;            
-    top: 80px;                  
-    align-self: flex-start;     
-    flex-shrink: 0;
-    width: 280px;                
-    height: fit-content;       
-    max-height: calc(100vh - 80px); 
-    background: #fff;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 8px 8px;
-    z-index: 10;
-  }   */
     position: fixed;
     top: 71px;
     /* width: 280px; */
@@ -98,7 +83,7 @@ ul.list {
     color:#0097e6
 }
 .khung {
-  background: #f8fcff;
+  background: #fff;
   border-radius: 15px;
   padding: 15px 55px;
   width: 550px;
@@ -182,7 +167,7 @@ ul.list {
   font-size: 18px;
 }
 .code{
-  background: #f8fcff;
+  background: #fff;
   border-radius: 15px;
   padding: 15px 110px;
   width: 550px;
