@@ -1,11 +1,14 @@
 @import url('common.css');
 
 /* --- CSS TRANG BÀI TẬP --- */
+/* --- CSS TRANG BÀI TẬP --- */
 ul.list {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
+
+/* --- BỐ CỤC CHUNG --- */
 
 /* --- BỐ CỤC CHUNG --- */
 .main_box {
@@ -122,8 +125,16 @@ ul.list {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  color: white;
+  font-size: 1.8em;
+  background-color: #0077cc;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
+/* --- TIÊU ĐỀ PHỤ --- */
 /* --- TIÊU ĐỀ PHỤ --- */
 .title2 {
   font-weight: 600;
@@ -165,12 +176,15 @@ ul.list {
   text-align: left;
   background-color: #fff;
   border-radius: 10px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .content th, .content td {
   border: 1px solid #ccc;
+  padding: 12px 18px;
   padding: 12px 18px;
   vertical-align: top;
 }
