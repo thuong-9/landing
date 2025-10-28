@@ -6,6 +6,8 @@
     <title>EasyCode</title>
     <link rel="icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
     <div data-include="partials/header.html"></div>
@@ -21,10 +23,128 @@
             </div>
         </section>
 
-        <section class="hero">
-            <div class="container">
-                <h1>Học HTML & CSS dễ hiểu, có lộ trình rõ ràng</h1>
-                <p>Xây dựng nền tảng Frontend vững chắc qua ví dụ thực tế, bài tập tương tác và dự án nhỏ.</p>
+       <section class="course-section">
+            <h2>Khóa học HTML & CSS</h2>
+            <div class="course-grid">
+                
+                <!-- Phần luyện tập & khóa học mới -->
+                <div class="lt-new">
+                <!-- Hình luyện tập -->
+                <div class="Luyen_tap">
+                    <img src="/img/luyen_tap.png" alt="Phần luyện tập chuyên sâu">
+                </div>
+
+                <!-- Khóa học mới -->
+                 <div class="slider-container new-slider">
+                    <div class="slider-track">
+                        <div class="course-card new">
+                            <div class="badge">NEW</div>
+                            <img src="/img/new (1).png" alt="Khóa học HTML cơ bản">
+                            <div class="course-info">
+                            <h3>HTML Accessibility Web <br> mọi người</h3>
+                            <p>Bắt đầu hành trình tạo ra những trang web dễ tiếp cận, giúp mọi người đều có thể trải nghiệm nội dung của bạn.</p>
+                            <span class="consulting-team">Đội ngũ tư vấn</span>
+                            </div>
+                        </div>
+
+                        <div class="course-card new">
+                            <div class="badge">NEW</div>
+                            <img src="/img/new (2).png" alt="Khóa học HTML cơ bản">
+                            <div class="course-info">
+                            <h3>HTML Component hóa <br>Xu hướng Web Components</h3>
+                            <p>Bước vào thế giới Web Components - nơi bạn có thể tự tạo những khối giao diện HTML riêng, hiện đại và dễ chia sẻ giữa các dự án.</p>
+                            <span class="consulting-team">Đội ngũ tư vấn</span>
+                            </div>
+                        </div>
+
+                        <div class="course-card new">
+                            <div class="badge">NEW</div>
+                            <img src="/img/new (3).png" alt="Bài học mới">
+                            <div class="course-info">
+                            <h3>HTML AI Content</h3>
+                            <p>Khởi đầu kỷ nguyên sáng tạo nội dung thông minh - nơi HTML kết hợp cùng AI để tạo nên trải nghiệm web hấp dẫn và cá nhân hóa.</p>
+                            <span class="consulting-team">Đội ngũ tư vấn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+                </div>
+
+                <!-- Bài học đang hot -->
+                <div class="hot autoplay">
+                <div class="course-card hot">
+                    <div class="badge">HOT</div>
+                    <img src="/img/hot (1).png" alt="Bài học được yêu thích">
+                    <div class="course-info">
+                    <h3>Cấu trúc chuẩn của trang html</h3>
+                    <p>Bắt đầu hành trình thiết kế web với bước đầu tiên - hiểu rõ cấu trúc chuẩn của một trang HTML hiện đại.</p>
+                    <span class="consulting-team">Đội ngũ tư vấn</span>
+                    </div>
+                </div>
+
+                <div class="course-card hot">
+                    <div class="badge">HOT</div>
+                    <img src="/img/hot (2).png" alt="Bài học được yêu thích">
+                    <div class="course-info">
+                    <h3>Tối ưu hình ảnh & media hiện đại</h3>
+                    <p>Tìm hiểu những kỹ thuật tối ưu hình ảnh và media giúp trang web tải nhanh - hiển thị đẹp - tiết kiệm băng thông.</p>
+                    <span class="consulting-team">Đội ngũ tư vấn</span>
+                    </div>
+                </div>
+
+                <div class="course-card hot">
+                    <div class="badge">HOT</div>
+                    <img src="/img/hot (3).png" alt="Bài học được yêu thích">
+                    <div class="course-info">
+                    <h3>Liên kết, nút và biểu tượng hiện đại</h3>
+                    <p>Khám phá cách tạo liên kết (link), nút bấm (button) và biểu tượng (icon) theo phong cách hiện đại - chuyên nghiệp - chuẩn UI/UX.</p>
+                    <span class="consulting-team">Đội ngũ tư vấn</span>
+                    </div>
+                </div>
+
+                <div class="course-card hot">
+                    <div class="badge">HOT</div>
+                    <img src="/img/hot (4).png" alt="Bài học được yêu thích">
+                    <div class="course-info">
+                    <h3>HTML + CSS Layout hiện đại</h3>
+                    <p>Làm chủ các kỹ thuật bố cục (layout) hiện đại giúp bạn tạo ra những trang web đẹp, linh hoạt và chuẩn responsive.</p>
+                    <span class="consulting-team">Đội ngũ tư vấn</span>
+                    </div>
+                </div>
+
+                <div class="course-card hot">
+                    <div class="badge">HOT</div>
+                    <img src="/img/hot (5).png" alt="Bài học được yêu thích">
+                    <div class="course-info">
+                    <h3>Kết hợp HTML + JavaScript cơ bản</h3>
+                    <p>Khám phá cách biến trang web tĩnh thành trang web tương tác bằng JavaScript!</p>
+                    <span class="consulting-team">Đội ngũ tư vấn</span>
+                    </div>
+                </div>
+                 </div>
+            </div>
+            </section>
+
+        <section class="sharing-section">
+            <h2> Lắng nghe và chia sẻ</h2>
+            <div class="sharing-slider">
+                <img src="/img/pk_1 (1).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (2).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (3).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (4).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (5).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (6).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (7).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (8).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (9).png" alt="Chia sẻ"> 
+                <img src="/img/pk_1 (10).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (11).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (12).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (13).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (14).png" alt="Chia sẻ">
+                <img src="/img/pk_1 (15).png" alt="Chia sẻ">
             </div>
         </section>
 
@@ -106,6 +226,11 @@
     </main>
 
     <div data-include="partials/footer.html"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/include.js"></script>
+    <script src="/js/new.js"></script>
+    <script src="/js/hot.js"></script>
+    <script src="/js/pk.js"></script>
 </body>
 </html>
