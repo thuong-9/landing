@@ -2,22 +2,22 @@
 
 /* --- CSS TRANG BÀI TẬP --- */
 ul.list {
-  list-style: none;  
-  padding-left: 0;    
-  margin: 0;  
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* --- BỐ CỤC CHUNG --- */
 .main_box {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh;            /* an toàn hơn height cố định */
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   gap: 20px; /* khoảng cách giữa sidebar và main */
   background: #f0f4f8;
-  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 /* --- MENU BÊN TRÁI --- */
@@ -29,12 +29,13 @@ ul.list {
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   backdrop-filter: blur(5px);
-  /* thêm */
-    height: 99vh;
-    overflow-y: auto;          /* Thêm thanh cuộn dọc khi nội dung quá dài */
-  overflow-x: hidden;        /* Ẩn tràn ngang */
+
   position: sticky;
- 
+  top: 20px; /* bắt buộc để sticky hoạt động chính xác */
+  /* giới hạn chiều cao an toàn cho sidebar (trừ phần top/bottom) */
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* Logo */
@@ -42,9 +43,9 @@ ul.list {
   background-color: #fff;
   text-align: center;
   padding: 18px 12px;
-  font-size: 28px; 
-  font-weight: 700; 
-  color: #007bff; 
+  font-size: 28px;
+  font-weight: 700;
+  color: #007bff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 10px;
   margin-bottom: 20px;
@@ -96,7 +97,7 @@ ul.list {
   color: #fff;               /* chữ trắng */
   font-weight: 600;
   border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   transform: translateY(-2px);
   transition: all 0.3s ease;
 }
@@ -109,8 +110,7 @@ ul.list {
   background: #f9fbfd;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
-  
- 
+  box-sizing: border-box;
 }
 
 /* --- TIÊU ĐỀ CHÍNH --- */
@@ -135,17 +135,20 @@ ul.list {
   padding-left: 10px;
 }
 
-/* --- KHUNG BAO NỘI DUNG --- */
+/* --- KHUNG BAO NỘI DUNG (GỘP VÀ DỒNG NHẤT) --- */
 .content-box {
   background: #ffffff;
-  border-radius: 15px;
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
   padding: 25px;
-  width: 95%;
+  width: 100%;
+  max-width: 1100px;
   font-size: 16px;
   margin: 25px auto;
-  text-align: left;  
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
 }
 
 .content-box:hover {
@@ -153,12 +156,9 @@ ul.list {
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-/* --- KHUNG CHỨA CODE --- */
-
-
 /* --- BẢNG TRONG NỘI DUNG --- */
 .content table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse;
   margin: 30px auto;
   font-size: 16px;
@@ -182,33 +182,15 @@ ul.list {
   text-align: center;
 }
 
-.content tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.content tr:hover {
-  background-color: #e6f4ff;
-  transition: background-color 0.3s;
-}
-
 /* --- HIỂN THỊ / ẨN NỘI DUNG --- */
 .content { display: none; }
 .content.active { display: block; }
 
-/* bài 1*/
-
+/* --- FONT CHO TOÀN TRANG --- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif; /* đặt 1 nơi duy nhất */
   background-color: #f7faff;
-  
-}
-
-.content-box {
-  background: #fff;
-  border: 1px solid #d0d7de;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 /* Tabs */
@@ -259,9 +241,10 @@ body {
   max-width: 100%;
   box-sizing: border-box;
 }
+
 .khung ul {
   margin: 0;
-  padding-left: 20px;                 /* thụt đầu dòng danh sách */
+  padding-left: 20px; /* thụt đầu dòng danh sách */
 }
 
 pre {
@@ -269,28 +252,46 @@ pre {
   font-family: Consolas, monospace;
   font-size: 15px;
   color: #222;
-  white-space: pre;        /* Giữ nguyên xuống dòng trong code */
-  word-wrap: normal;
+  white-space: pre; /* giữ nguyên xuống dòng */
   overflow-x: auto;
 }
 
-.fixed-scroll {
-  height: calc(100vh - 120px); /* trừ chiều cao menu/header/footer nếu có */
-  overflow-y: auto;            /* cho phép cuộn dọc */
-  overflow-x: hidden;
-}
-
+/* Tùy chỉnh scrollbar (thay vì ẩn hoàn toàn) */
 .sidebar_menu::-webkit-scrollbar,
 .fixed-scroll::-webkit-scrollbar,
 .main-content::-webkit-scrollbar {
-  display: none;
+  width: 8px;
 }
 
-.sidebar_menu,
-.fixed-scroll,
-.main-content {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.sidebar_menu::-webkit-scrollbar-thumb,
+.fixed-scroll::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 8px;
 }
 
+/* fallback cho FF */
+.sidebar_menu, .fixed-scroll, .main-content {
+  -ms-overflow-style: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.12) transparent;
+}
+
+/* giúp layout responsive */
+@media (max-width: 960px) {
+  .main_box { flex-direction: column; padding: 12px; }
+  .main_box .sidebar_menu { width: 100%; position: relative; top: 0; max-height: none; }
+  .main-content { padding: 20px; border-left: none; }
+  .content-box { width: 100%; margin: 15px 0; }
+}
+
+.content-box h2 {
+  color: #0077cc;
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-shadow: 0 1px 3px rgba(0, 119, 204, 0.15);
+  border-left: 6px solid #0d6efd;
+  padding-left: 12px;
+}
 
