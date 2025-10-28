@@ -1429,27 +1429,10 @@ ul li a:hover {
   justify-content: center;
 }</code></pre></div>
                 </div>
-
-  <script>
-function showContent(sectionId, element) {
-  // 1️⃣ Ẩn tất cả nội dung
-  const contents = document.querySelectorAll('.content');
-  contents.forEach(content => content.classList.remove('active'));
-
-  // 2️⃣ Hiện phần nội dung được chọn
-  document.getElementById(sectionId).classList.add('active');
-
-  // 3️⃣ Xóa “active-link” khỏi tất cả liên kết
-  const links = document.querySelectorAll('.menu .list a');
-  links.forEach(link => link.classList.remove('active-link'));
-
-  // 4️⃣ Gán “active-link” cho mục đang click
-  element.classList.add('active-link');
-}
-</script>
     </main>
 
-    <div data-include="partials/footer.html"></div>
+    <div data-include="partials/footer.html" style="position: relative;"></div>
     <script src="/js/include.js"></script>
+    <script src="/js/lesson.js"></script>
 </body>
 </html>
