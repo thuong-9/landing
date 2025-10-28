@@ -1,52 +1,332 @@
 @import url('common.css');
 
-/* Page-specific styles for index.html */
-.hero .container {
-    justify-items: center;
-    align-items: center;
-}
-.hero { 
-  padding: 64px 0; 
-  background: radial-gradient(80% 120% at 50% -20%, #1f6feb22, transparent 60%); 
-  border-bottom: 1px solid var(--border); 
-}
-.hero h1 { 
-  margin: 0 0 8px; 
-  font-size: 36px; 
-}
-.hero p { 
-  margin: 0 0 20px; 
-  color: var(--muted); 
-  max-width: 720px; 
-}
-.cta-group { 
-  display: flex; 
-  gap: 12px; 
+/* ===== VIDEO ===== */
+.video {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
 }
 
-.features { padding: 40px 0; }
-.features .grid { 
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 16px; 
-}
-.card { 
-  background: #d0e3fe; 
-  border: 1px solid var(--border); 
-  border-radius: 12px; 
-  padding: 16px; 
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.curriculum { padding: 16px 0 48px; }
-.steps { 
-  background: #d0e3fe; 
-  border: 1px solid var(--border); 
-  border-radius: 12px; 
-  padding: 16px 24px; 
+/* ===== CTA Buttons on video ===== */
+.video .cta-group {
+  position: absolute;
+  bottom: 160px; /* vị trí cách đáy video 80px, chỉnh theo ý */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 2;
 }
-.steps li { margin: 8px 0; }
 
-@media (max-width: 800px) {
-  .features .grid { grid-template-columns: 1fr; }
-  .cta-group { flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #0078ff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #005fcc;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  color: #0078ff;
+  transform: translateY(-2px);
+}
+
+section.cta-section {
+  margin-bottom: 30px;
+}
+
+/* ======== HERO ======== */
+.hero {
+  background: linear-gradient(135deg, #e0f0ff, #fff);
+  text-align: center;
+  padding: 30px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--primary-dark);
+}
+.hero p {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+
+/* ======== FEATURES / CARD ======== */
+.features {
+  text-align: center;
+  padding: 40px 20px 40px;
+  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+.features h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  color: #0078ff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.features h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #979797;
+  border-radius: 2px;
+  margin: 15px auto 0;
+}
+
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.features .card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #b4b4b4dc;
+}
+.features .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.features .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,120,255,0.05), rgba(0,120,255,0.15));
+  transition: left 0.4s ease;
+}
+.features .card .icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #0078ff;
+}
+
+.features .card:hover::before {
+  left: 0;
+}
+
+.features .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.features .card h3 {
+  color: #0078ff;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.features .card p {
+  color: #444;
+  line-height: 1.65;
+  font-size: 1rem;
+  text-align: justify;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    padding: 70px 15px;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
+  }
+
+  .features .card {
+    text-align: center;
+  }
+}
+
+.curriculum {
+  padding: 30px 20px 60px;
+  background: linear-gradient(to bottom, #ffffff, #f7faff);
+  text-align: center;
+}
+
+.curriculum h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0078ff;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.curriculum h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #b4b4b4dc;
+  margin: 16px auto 0;
+  border-radius: 2px;
+}
+
+/* Timeline layout */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #0078ff22;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.step:nth-child(1) { animation-delay: 0.2s; }
+.step:nth-child(2) { animation-delay: 0.4s; }
+.step:nth-child(3) { animation-delay: 0.6s; }
+.step:nth-child(4) { animation-delay: 0.8s; }
+.step:nth-child(5) { animation-delay: 1s; }
+
+.step .icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #cfcfcf9c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-right: 20px;
+  box-shadow: 0 6px 12px rgba(48, 14, 238, 0.25);
+}
+
+.step .content h3 {
+  font-size: 1.3rem;
+  color: #0078ff;
+  margin-bottom: 8px;
+}
+
+.step .content p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Hiệu ứng trượt lên */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .timeline::before { left: 15px; }
+  .step { flex-direction: row; align-items: center; }
+  .step .icon { width: 40px; height: 40px; font-size: 1.2rem; margin-right: 15px; }
+  .curriculum h2 { font-size: 1.9rem; }
+}
+/* Đoạn chốt */
+.cta-section {
+  background: linear-gradient(135deg, #98c6fa, #3a90ff);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 24px;
+  max-width: 100%;
+  margin-top: -60px;
+  box-shadow: 0 10px 25px rgba(0, 119, 255, 0.2);
+  transform: translateY(40px);
+  opacity: 0;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.cta-section .btn {
+  background: #fff;
+  color: #0077ff;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background: #e6f2ff;
+  transform: scale(1.05);
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
