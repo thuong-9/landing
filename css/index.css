@@ -71,7 +71,7 @@ section.cta-section {
 .features h2 {
   font-size: 2.3rem;
   margin-bottom: 40px;
-  color: #0078ff;
+  color:#0571ff;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -169,7 +169,7 @@ section.cta-section {
 .curriculum h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #0078ff;
+  color: #0571ff;
   margin-bottom: 60px;
   position: relative;
 }
@@ -499,18 +499,21 @@ section.cta-section {
 }
 /* gk */
 .sharing-section {
-  padding: 0px 20px;
-  text-align: center;
+  width: 100%;
+  padding: 0px 5%;
   background: #f8fbff;
+  font-family: "Poppins", sans-serif;
 }
 
 .sharing-section h2 {
   font-size: 2rem;
-  color: #0078ff;
-  margin-bottom: 30px;
+  font-weight: 700;
+  color: #0571ff;
   text-align: left;
+  margin-bottom: 40px;
   
 }
+
 
 .sharing-slider .slick-slide {
   padding: 0 10px; /* khoảng cách giữa ảnh */
@@ -541,4 +544,9 @@ section.cta-section {
 .sharing-slider .slick-prev:hover,
 .sharing-slider .slick-next:hover {
   background: #005fcc;
+}
+
+.consulting-team a{
+  text-decoration: none;
+  color: #005fcc;
 }
