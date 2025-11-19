@@ -61,7 +61,7 @@ html, body {
 .tutorial-section h2 {
   color: #0571ff;
   font-size: 1.8rem;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,10 +145,10 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-.slick-slide:not(.slick-center) {
+/* .slick-slide:not(.slick-center) {
   opacity: 0.7;
   transform: scale(0.95);
-}
+} */
 
 .slick-center {
     transform: scale(1.1);
@@ -181,7 +181,7 @@ html, body {
 }
 /* ===== THỰC HÀNH TƯƠNG TÁC - DANH MỤC ===== */
 .practice {
-  padding: 80px 20px;
+  padding: 0px 20px;
   text-align: center;
   background: linear-gradient(180deg, #f9fbff 0%, #ffffff 100%);
 }
@@ -393,7 +393,7 @@ textarea:focus {
 
 /* ===== TOOLKIT ===== */
 .toolkit {
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 .toolkit h2 {
@@ -402,37 +402,29 @@ textarea:focus {
   margin-bottom: 10px;
   font-weight: 700;
 }
-
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
+.single-item {
+  width: 750px;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 10px auto;
 }
 
-.tool-item {
-  background: #fff;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
+.single-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
 }
 
-.tool-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,120,255,0.1);
-}
 
-.tool-item i {
-  font-size: 2rem;
-  color: #0078ff;
-  margin-bottom: 12px;
-}
+
 
 /* ===== HỌC VIÊN NỔI BẬT ===== */
 /* ======== HỌC VIÊN NỔI BẬT ======== */
 .top-learners {
-  padding: 80px 20px;
+  padding: 0px 20px;
   text-align: center;
   background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
 }
